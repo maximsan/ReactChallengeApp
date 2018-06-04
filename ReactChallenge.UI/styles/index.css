@@ -30,6 +30,18 @@ body {
   margin-right: 2rem;
 }
 
+.position-fixed {
+    top: 2rem;
+}
+
+.search-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
 @media (max-width: 27.826em) {
   .container-fluid .sorted-buttons {
     width: 100%;
@@ -49,7 +61,6 @@ body {
   .search-name {
     padding: 0;
     margin: 0;
-    display: flex;
   }
 
   .search-name .form-control {

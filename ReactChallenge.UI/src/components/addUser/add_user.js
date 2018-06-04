@@ -59,6 +59,7 @@ export default class AddUser extends React.Component {
     }
 
     onHandleChangeName(e) {
+        e.preventDefault();
         const Name = e.target.value;
         this.setState({
             Name
@@ -66,6 +67,7 @@ export default class AddUser extends React.Component {
     }
 
     onHandleChangeAge(e) {
+        e.preventDefault();
         const Age = e.target.value;
         this.setState({
             Age
@@ -73,6 +75,7 @@ export default class AddUser extends React.Component {
     }
 
     onHandleChangeImage(e) {
+        e.preventDefault();
         const Image = e.target.value;
         this.setState({
             Image
@@ -80,6 +83,7 @@ export default class AddUser extends React.Component {
     }
 
     onHandleChangePhone(e) {
+        e.preventDefault();
         const Phone = e.target.value;
         this.setState({
             Phone
@@ -87,6 +91,7 @@ export default class AddUser extends React.Component {
     }
 
     onHandleChangePhrase(e) {
+        e.preventDefault();
         const Phrase = e.target.value;
         this.setState({
             Phrase

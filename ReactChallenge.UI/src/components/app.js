@@ -68,7 +68,7 @@ export default class App extends React.Component {
     return (
       <div className="app container-fluid">
         <div className="row mt-4">
-          <div className="col-xs-10 col-10">
+          <div className="col-12">
             <SearchBar
               term={term}
               data={this.initialData}
