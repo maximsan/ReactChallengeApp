@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "name": "ReactChallenge",
+  "author": "maximsan",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "css-loader": "^0.28.11",
+    "dreamjs": "^0.1.8",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jsonfile": "^4.0.0",
+    "lodash": "^4.17.10",
+    "popper.js": "^1.12.9",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "style-loader": "^0.21.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "webpack": "^2.2.0-rc.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  },
+  "scripts": {
+    "generate-data": "node utils/generate-data.js",
+    "start": "webpack-dev-server --open",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch",
+    "build": "webpack"
+  }
+}
